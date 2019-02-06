@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 h1 {
     font-size: 1.2em;
@@ -47,6 +48,8 @@ nav {
 .buttonlink a:hover {
     color: #039be5;
     background-color: #CFD8DC;
+    text-decoration: none !important;
+
 }
 
 .active {
