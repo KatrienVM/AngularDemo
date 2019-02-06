@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms';
 import { Person } from '../../models/person.model';
+import { PersonListService } from '../person-list/person-list.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-formulier',
@@ -9,19 +10,18 @@ import { Person } from '../../models/person.model';
 })
 export class FormulierComponent implements OnInit {
     person: Person = {
-    id: null,
     firstName: null,
     lastName: null,
     gender: null
 };
-
-  constructor() { }
-
+  constructor(private personService: PersonListService) {
+  }
   ngOnInit() {
   }
-
-  savePerson(newPerson: Person): void {
-    console.log(newPerson);
-  }
-
+  savePerson(persForm: NgForm): void {
+      const newPerson: Person = Object.assign({}, this.person);
+      this.personService.save(newPerson);
+      persForm.reset();
+      console.log(this.person);
+    }
 }

@@ -1,6 +1,6 @@
-<form #form="ngForm" (ngSubmit)="savePerson(person)">
+<form #form="ngForm" (ngSubmit)="savePerson(form)">
   <mat-form-field>
-    <input matInput placeholder="Firstname" name="firstName" id="firstName" [(ngModel)]="person.firstName" #firstName="ngModel" required="required">
+    <input matInput placeholder="Firstname" name="firstName" id="firstName" [(ngModel)]="person.firstName" #firstName="ngModel">
   </mat-form-field>
   <br>
 
@@ -24,10 +24,15 @@
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>-->
 
-<button type="submit" class="button">Versturen</button>
+<button mat-button type="submit" class="button">Versturen</button>
 </form>
 
+
+<!--<br>
+<br>
 {{form.value | json}}
 <br>
 <br>
-Person Model: {{person | json}}
+Person Model: {{person | json}}-->
+
+<app-person-list></app-person-list>

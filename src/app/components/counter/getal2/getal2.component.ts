@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CounterService} from '../../../counter.service';
+import {CounterService} from '../counter.service';
 
 @Component({
   selector: 'app-getal2',

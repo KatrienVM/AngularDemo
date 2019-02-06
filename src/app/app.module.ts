@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CounterService} from './counter.service';
+import { CounterService} from './components/counter/counter.service';
+import { PersonListService} from './components/person-list/person-list.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -52,7 +53,7 @@ const appRoutes: Routes = [
       MatDatepickerModule,
       MatNativeDateModule
   ],
-  providers: [CounterService],
+  providers: [CounterService, PersonListService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
