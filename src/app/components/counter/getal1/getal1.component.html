@@ -1,0 +1,23 @@
+<nav class="buttonlink">
+  <a routerLink="/counter/getal1" routerLinkActive="active">Getal 1</a>
+  <a routerLink="/counter/getal2" routerLinkActive="active">Getal 2</a>
+</nav>
+<router-outlet></router-outlet>
+
+<br>
+<div class="counter">
+  <div class="counter__container">
+    <button (click)="decrement();" class="counter__button">
+      -
+    </button>
+    <p class="counter__input">{{counterService.counterValue1}}</p>
+    <button (click)="increment();" class="counter__button">
+      +
+    </button>
+  </div>
+</div>
+
+
+
+
+
