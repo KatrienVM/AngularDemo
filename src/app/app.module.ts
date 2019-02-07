@@ -5,7 +5,14 @@ import { PersonListService} from './components/person-list/person-list.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatDatepickerModule, MatInputModule, MatNativeDateModule, MatSelectModule} from '@angular/material';
+import {
+    MAT_DATE_LOCALE,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatSelectModule
+} from '@angular/material';
 
 import { MatTabsModule} from '@angular/material';
 import { CounterComponent } from './components/counter/counter.component';
@@ -53,7 +60,7 @@ const appRoutes: Routes = [
       MatDatepickerModule,
       MatNativeDateModule
   ],
-  providers: [CounterService, PersonListService],
+  providers: [CounterService, PersonListService, {provide: MAT_DATE_LOCALE, useValue: 'nl-BE'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -11,7 +11,8 @@ export class PersonListService {
           firstName: 'Katrien',
           lastName: 'Van Melle',
           gender: 'Female',
-          birthdate: '26/12/1992'
+          birthdate: '12/26/1992',
+          email: 'katrien.van.melle@student.ehb.be'
       }
   ];
   getPersons(): Person[] {

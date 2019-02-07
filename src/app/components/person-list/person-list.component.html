@@ -1,36 +1,20 @@
-<h3>Personen:</h3>
-
-<div class="card">
+<Br>
+<br>
+<div class="card" *ngFor="let person of persons">
     <div class="card-header">
-        Featured
+        {{person.firstName}} {{person.lastName}}
     </div>
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">{{person.firstName}}</p>
+        <p class="card-text">{{person.lastName}}</p>
+        <p class="card-text">{{person.gender}}</p>
+        <p class="card-text">{{person.birthdate | date:'dd/MM/yyyy'}}</p>
+        <p class="card-text">{{person.email}}</p>
     </div>
 </div>
+<br><br>
 
-<div class="panel panel-default">
-    <div class="panel-heading">Panel Heading</div>
-    <div class="panel-body">Panel Content</div>
-</div>
 
-<div class="container">
-<div class="panel panel-primary" *ngFor="let person of persons">
-    <div class="panel-heading">
-        <h3 class="panel-title"> {{person.firstName}}</h3>
-    </div>
-    <div class="panel-body">
-        <div class="col-xs-8">
-                <div class="row">
-                    <div class="col-xs-6">Lastname:</div>
-                    <div class="col-xs-6">{{person.lastName}}</div>
-                </div>
-        </div>
-    </div>
-<p>{{person.gender}}, {{person.birthdate}}</p>
-</div>
-</div>
+
 
 

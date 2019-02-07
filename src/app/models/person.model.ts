@@ -4,4 +4,5 @@ export class Person {
     lastName: string;
     gender: string;
     birthdate: Date;
+    email: string;
 }
