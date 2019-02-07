@@ -30,13 +30,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Demo opdracht Angular
 
-Navigatie balken
+### Navigatie balken
 Maak bovenaan de pagina een navigatie balk met twee opties: “Counter” en “Formulier”. Laat in
 deze balk ook een getal zien (gewoon tekst, geen navigatie-optie), die je voorlopig op 0 mag laten
 staan. Als de counter tab wordt geselecteerd verschijnt er een tweede navbalk met de opties
 “getal1” en “getal2”. Gebruik hiervoor geneste routes in de routing module.
 
-Counter
+### Counter
 Maak een component aan waarmee je een getal kan optellen of aftrekken met 1. Gebruik dit
 component in zowel “getal1” als “getal2”. Maak een service aan waarin getal1 en getal2 worden
 bewaard, en telkens die veranderen door interacties met het component wordt dus de service
@@ -46,7 +46,7 @@ Ten laatste maak een directive aan die automatisch de inhoud van het element waa
 toegepast verandert naar de waarde van getal1 + getal2. Pas deze directive toe op het getal in de
 eerste navigatie bar.
 
-Formulier
+### Formulier
 In de formulier tab maak je een formulier aan waarmee een persoon basisgegevens kan doorsturen.
 Zoek en instaleer hiervoor een aantal angular componenten, zoals bv. een custom select om geslacht
 te selecteren. Alle data wordt strongly-typed opgeslagen (gebruik dus strings, ints, booleans, … ipv
